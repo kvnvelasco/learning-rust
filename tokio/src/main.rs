@@ -1,15 +1,13 @@
-use tokio::prelude::*;
 use std::thread::sleep;
 use std::time::Duration;
+use tokio::prelude::*;
 
 fn main() {
     let mut runtime: tokio::runtime::Runtime = tokio::runtime::Builder::new()
         .enable_all()
         .basic_scheduler()
         .threaded_scheduler()
-        .on_thread_start(|| {
-            println!("Thread starting")
-        })
+        .on_thread_start(|| println!("Thread starting"))
         .on_thread_stop(|| {
             println!("thread stopping");
         })

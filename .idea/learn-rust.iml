@@ -14,8 +14,13 @@
       <sourceFolder url="file://$MODULE_DIR$/tokio/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/tokio/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/tokio/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/threads/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/threads/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/threads/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/threads/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/dynamic-programming/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
+      <excludeFolder url="file://$MODULE_DIR$/threads/target" />
       <excludeFolder url="file://$MODULE_DIR$/tokio/target" />
     </content>
     <orderEntry type="inheritedJdk" />

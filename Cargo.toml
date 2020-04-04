@@ -1,2 +1,2 @@
 [workspace]
-members = ['dynamic-programming', 'tokio']
+members = ['dynamic-programming', 'tokio', 'threads']
