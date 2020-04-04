@@ -12,16 +12,19 @@ fn main() {
                 let data = data.clone();
                 thread::spawn(move || {
                     let mut lock = data.lock().expect("Potato");
+                    // prevent the next thread from acquiring the lock synthetically;
+                    sleep(Duration::from_secs(2));
                     lock.push_str("Patatas");
-                    println!("{}", &lock);
+                    println!("thread 1: {}", &lock);
                 })
             },
             {
                 let data = data.clone();
                 thread::spawn(move || {
-                    sleep(Duration::from_secs(2));
+                    // this lock will wait for the thread above to drop it's lock (go out of scope)
+                    // before it's granted. This can cause deadlocks if not implemented correctly.
                     let lock = data.lock().expect("Potato");
-                    println!("{}", &lock);
+                    println!("Thread 2: {}", &lock);
                 })
             },
         ]
