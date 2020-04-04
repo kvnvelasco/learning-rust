@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CPP_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/dynamic-programming/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/dynamic-programming/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/dynamic-programming/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/dynamic-programming/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tokio/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tokio/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tokio/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tokio/benches" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/dynamic-programming/target" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+      <excludeFolder url="file://$MODULE_DIR$/tokio/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
