@@ -1,10 +1,11 @@
 use crate::rsync::compute_file_signature;
 
 mod rsync {
-    use libc::{fclose, fopen, size_t, FILE};
     use std::ffi::CString;
     use std::os::raw::{c_char, c_int, c_longlong, c_uchar};
     use std::path::{Path, PathBuf};
+
+    use libc::{fclose, FILE, fopen, size_t};
 
     #[repr(C)]
     #[derive(Debug)]
@@ -19,24 +20,9 @@ mod rsync {
         Blake2Hash = 0x72730137,
     }
 
-
     #[repr(C)]
-    pub struct RsyncStats {
-        op:*const c_char,
-        lit_cmds:c_int,
-        lit_bytes:c_longlong,
-        lit_cmdbytes:c_longlong,
-        copy_cmds:c_longlong,
-        copy_bytes:c_longlong,
-        copy_cmdbytes:c_longlong,
-        sig_cmds:c_longlong,
-        sig_bytes:c_longlong,
-        false_matches:c_int,
-        sig_blocks:c_longlong,
-        block_len:size_t,
-        in_bytes:c_longlong,
-        out_bytes:c_longlong
-    }
+    // TODO: Unimplemented!
+    pub struct RsyncStats {}
 
     #[link(name = "rsync")]
     extern "C" {
@@ -49,7 +35,6 @@ mod rsync {
             stats: *mut RsyncStats,
         ) -> RsSyncResult;
     }
-
 
     pub fn compute_file_signature<T: AsRef<Path>>(target_file: T) {
         let path = target_file.as_ref().to_str().unwrap();
@@ -76,7 +61,6 @@ mod rsync {
                 output.as_ptr() as *const c_char,
                 "wb".as_ptr() as *const c_char,
             );
-
 
             let result = rs_sig_file(
                 input,
