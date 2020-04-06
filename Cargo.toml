@@ -1,2 +1,10 @@
 [workspace]
-members = ['dynamic-programming', 'tokio', 'threads']
+members = [
+    'dynamic-programming',
+    'tokio',
+    'threads',
+    'threaded-tcp-server',
+    'futures_reimpl',
+    'syscalls',
+    'ffi'
+]

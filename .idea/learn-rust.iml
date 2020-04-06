@@ -18,8 +18,32 @@
       <sourceFolder url="file://$MODULE_DIR$/threads/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/threads/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/threads/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/threaded-tcp-server/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/threaded-tcp-server/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/threaded-tcp-server/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/threaded-tcp-server/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/futures_reimpl/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/futures/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/futures/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/futures/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/futures_reimpl/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/futures_reimpl/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/futures_reimpl/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/syscalls/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/syscalls/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/syscalls/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/syscalls/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/ffi/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ffi/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ffi/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/ffi/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/dynamic-programming/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ffi/target" />
+      <excludeFolder url="file://$MODULE_DIR$/futures/target" />
+      <excludeFolder url="file://$MODULE_DIR$/futures_reimpl/target" />
+      <excludeFolder url="file://$MODULE_DIR$/syscalls/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
+      <excludeFolder url="file://$MODULE_DIR$/threaded-tcp-server/target" />
       <excludeFolder url="file://$MODULE_DIR$/threads/target" />
       <excludeFolder url="file://$MODULE_DIR$/tokio/target" />
     </content>
